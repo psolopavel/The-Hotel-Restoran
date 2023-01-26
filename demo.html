@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__logo">
+            <a href=""> <img src="img/logo.jpg" alt=""></a>
+         </div>
+         <div class="header__items" data-da='.burger,710'>
+            <a class="header__item">о нас</a>
+            <a class="header__item">номера</a>
+            <a class="header__item">ресторан</a>
+            <a class="header__item">спа</a>
+            <a class="header__item">детям</a>
+            <a class="header__item">спорт</a>
+         </div>
+         <div class="header__about-site about-site">
+            <div class="about-site__tel" data-da='.burger,380'>
+               <a href="tel:0992107655" class="about-site__phone">0992107655</a>
+               <p class="about-site__stret">Липецкфя обл., c.п., Горици</p>
+            </div>
+            <div class="about-site__items" data-da='.burger,610'>
+               <a class="about-site__item">трансфер</a>
+               <a class="about-site__item">фотогалерея</a>
+               <a class="about-site__item">собития</a>
+               <a class="about-site__item">контакти</a>
+            </div>
+         </div>
+         <div class="about-site__burger" onclick="document.querySelector('body').classList.toggle('_hidden');
+         document.querySelector('.burger').classList.add('_active');">
+         </div>
+      </header>
+      <div class="burger">
+         <div class="cross" onclick="document.querySelector('.burger').classList.remove('_active');
+         document.querySelector('body').classList.remove('_hidden');"></div>
+      </div>
+      <main class="main">
+         <section class="main__swiper main-swiper">
+            <div class='main-swiper__slider swiper'>
+               <div class="main-siwiper__arrows">
+                  <div class="main-swiper__prev"></div>
+                  <div class="main-swiper__next"></div>
+               </div>
+               <div class='main-swiper__swipper swiper-wrapper'>
+                  <div class='main-swiper__slide swiper-slide'>
+                     <img src='img/restora-1.jpg' alt='Картинка'>
+                  </div>
+                  <div class='main-swiper__slide swiper-slide'>
+                     <img src='img/restoran-2.jpg' alt='Картинка'>
+                  </div>
+                  <div class='main-swiper__slide swiper-slide'>
+                     <img src='img/restoran-3.jpeg' alt='Картинка'>
+                  </div>
+               </div>
+            </div>
+            <div class="main-swiper__form swiper-form">
+               <div class="swiper-form__items">
+                  <div class="swiper-form__item">
+                     <div class="swiper-form__image" style="background-image: url(img/icons/grid.svg);"></div>
+                     <div class="swiper-form__body">
+                        <p>Дата заезда</p>
+                        <div>
+                           <select class='select' name='language'>
+                              <option disabled>11 ноября 2022</option>
+                              <option value='HTML'>12 ноября 2022</option>
+                              <option value='JavaScript'>13 ноября 2022</option>
+                              <option value='PHP'>14 ноября 2022</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-form__item">
+                     <div class="swiper-form__image" style="background-image: url(img/icons/grid.svg);"></div>
+                     <div class="swiper-form__body">
+                        <p>Дата заезда</p>
+                        <select class='select' name='language'>
+                           <option disabled>22 ноября 2022</option>
+                           <option value='HTML'>12 ноября 2022</option>
+                           <option value='JavaScript'>13 ноября 2022</option>
+                           <option value='PHP'>14 ноября 2022</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="swiper-form__item swiper-form__too-select">
+                     <p>Размещенейе в номере</p>
+                     <div>
+                        <select class='select' name='language'>
+                           <option disabled>2 взрослих</option>
+                           <option value='HTML'>3 взрослих</option>
+                           <option value='JavaScript'>4 взрослих</option>
+                           <option value='PHP'>5 взрослих</option>
+                        </select>
+                        <select class='select' name='language'>
+                           <option disabled>+ Добавить детей</option>
+                           <option value='Python'>0 детей</option>
+                           <option value='HTML'>1 ребонок</option>
+                           <option value='JavaScript'>2 ребонока</option>
+                           <option value='PHP'>3 ребонока</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="swiper-form__item" style="align-items: center;">
+                     <a href="">Нужен ещо один номер?</a>
+                  </div>
+                  <a class="swiper-form__search">Поиск</a>
+               </div>
+            </div>
+         </section>
+         <section class="main__toscani main-toscani">
+            <div class="main-toscani__conteiner">
+               <div class="main-toscani__header">
+                  <h1 class="main-toscani__title">toscani restoran</h1>
+                  <div class="main-toscani__swith-on">
+                     <span>Гавная</span>
+                     <span>Ресторан</span>
+                     <span>Toscani restoran</span>
+
+                  </div>
+               </div>
+               <div class="main-toscani__items">
+                  <div class="main-toscani__item toscani-item ">
+                     <div class="toscani-item__image">
+                        <img src="img/image-items/meat.jpg" alt="" srcset="">
+                     </div>
+                     <div class="toscani-item__body">
+                        <h2 class="toscani-item__title">Ви не останесь равнодушним</h2>
+                        <p class="toscani-item__description">
+                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem totam voluptatum rem
+                           optio
+                           magnam illo nam earum. In eum quam beatae cum, amet ipsam aliquam vitae porro consequatur.
+                           Itaque voluptates eum possimus placeat voluptatibus libero maxime modi sit, fugit ut!
+                        </p>
+                        <a href="" class="toscani-item__button">Подробнее</a>
+                     </div>
+                  </div>
+                  <div class="main-toscani__item toscani-item toscani-item__revers ">
+                     <div class="toscani-item__image">
+                        <img src="img/image-items/eat-start.jpeg" alt="" srcset="">
+                     </div>
+                     <div class="toscani-item__body">
+                        <h2 class="toscani-item__title">Високое качество сервиса</h2>
+                        <p class="toscani-item__description">
+                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem totam voluptatum rem
+                           optio
+                           magnam illo nam earum. In eum quam beatae cum, amet ipsam aliquam vitae porro consequatur.
+                           Itaque voluptates eum possimus placeat voluptatibus libero maxime modi sit, fugit ut!
+                        </p>
+                        <a href="" class="toscani-item__button">Подробнее</a>
+                     </div>
+                  </div>
+                  <div class="main-toscani__item toscani-item ">
+                     <div class="toscani-item__image">
+                        <img src="img/image-items/bludo.jpg" alt="" srcset="">
+                     </div>
+                     <div class="toscani-item__body">
+                        <h2 class="toscani-item__title">Обслуживанее в номерах</h2>
+                        <p class="toscani-item__description">
+                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem totam voluptatum rem
+                           optio
+                           magnam illo nam earum. In eum quam beatae cum, amet ipsam aliquam vitae porro consequatur.
+                           Itaque voluptates eum possimus placeat voluptatibus libero maxime modi sit, fugit ut!
+                        </p>
+                        <a href="" class="toscani-item__button">Подробнее</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="main__galery main-galery">
+            <h3 class="main-galery__title">фотогалерея</h3>
+            <div class="main-galery__items">
+               <div class="main-galery__item">
+                  <img src="img/image-items/bludo.jpg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-items/eat-start.jpeg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-items/meat.jpg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-footer/ (1).jpeg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-footer/ (1).jpg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-footer/ (2).jpeg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-footer/ (3).jpeg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-footer/ (4).jpeg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-items/bludo.jpg" alt="">
+               </div>
+               <div class="main-galery__item">
+                  <img src="img/image-items/meat.jpg" alt="">
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__conteiner">
+            <div class="footer__body footer-body">
+               <div class="footer-body__title">Нужна консультация?</div>
+               <div class="footer-body__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+                  culpa harum unde possimus ut? Eius impedit, quisquam excepturi ad odio.</div>
+               <a class="footer-body__button">Задать вопрос</a>
+            </div>
+            <div class="footer__bottom footer-bottom">
+               <div class="footer-bottom__items">
+                  <div class="footer-bottom__item">
+                     <div class="footer-bottom__title">О нас</div>
+                     <a href="" class="footer-bottom__link">О компании</a>
+                     <a href="" class="footer-bottom__link">История</a>
+                     <a href="" class="footer-bottom__link">Лицензии</a>
+                     <a href="" class="footer-bottom__link">Наша команда</a>
+                     <a href="" class="footer-bottom__link">Отзывы</a>
+                  </div>
+                  <div class="footer-bottom__item">
+                     <div class="footer-bottom__title">Услуги</div>
+                     <a href="" class="footer-bottom__link">Номера</a>
+                     <a href="" class="footer-bottom__link">Рестораны</a>
+                     <a href="" class="footer-bottom__link">Развлечения</a>
+                     <a href="" class="footer-bottom__link">Наша команда</a>
+                     <a href="" class="footer-bottom__link">СПА</a>
+                     <a href="" class="footer-bottom__link">Детям</a>
+                  </div>
+                  <div class="footer-bottom__item">
+                     <div class="footer-bottom__title">Промоушн</div>
+                     <a href="" class="footer-bottom__link">Свадьбы</a>
+                     <a href="" class="footer-bottom__link">Корпоративы</a>
+                     <a href="" class="footer-bottom__link">Конференции</a>
+                     <a href="" class="footer-bottom__link">Тимбилдинги</a>
+                     <a href="" class="footer-bottom__link">Сезонные праздники</a>
+                  </div>
+                  <div class="footer-bottom__item">
+                     <div class="footer-bottom__title">Информация</div>
+                     <a href="" class="footer-bottom__link">Акции</a>
+                     <a href="" class="footer-bottom__link">События</a>
+                     <a href="" class="footer-bottom__link">Вопрос ответ</a>
+                     <a href="" class="footer-bottom__link">Политика конфиденциальности</a>
+                  </div>
+                  <div class="footer-bottom__item">
+                     <div class="footer-bottom__title">Наши контакты</div>
+                     <div class="footer-bottom__contact">
+                        <img src="img/icons/location.svg" style="transform: translateX(-6px);" alt="">
+                        <p>Липецкая обл.,<br> c. Горици</p>
+                     </div>
+                     <div class="footer-bottom__contact">
+                        <img src="img/icons/phone.svg" style="transform: rotate(-45deg); width: 26px; height: 30px;"
+                           alt="">
+                        <div>
+                           <a href="tel:79291017371">+7(929)-101-73-71</a>
+                           <a href="tel:79291017371">+7(929)-101-73-71</a>
+                        </div>
+                     </div>
+                     <div class="footer-bottom__contact">
+                        <div style="width: 26px; transform: translateY(3px);">✉️</div>
+                        <a href="">psolopavel@gmail.com</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/and-JS/script.js"></script>
+   <script src="js/and-JS/dynamic-adapt.js"></script>
+   <script src="js/and-JS/slider-swiper.js"></script>
+   <script src="js/and-JS/selection.js"></script>
+</body>
+
+</html>

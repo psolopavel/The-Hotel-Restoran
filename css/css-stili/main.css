@@ -1,0 +1,10 @@
+.main {
+  /* .main__swiper */
+  /* .main__slider */
+  /* .main__swipper */
+  /* .main__slide */
+}
+.main__slide img {
+  width: 100vw;
+  height: 100vh;
+}
