@@ -1425,7 +1425,7 @@ body a {
 }
 .footer-body__title::after {
   content: "";
-  background: url("../../img/icons/arrow-white.svg");
+  background: url("../img/icons/arrow-white.svg");
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   display: block;
